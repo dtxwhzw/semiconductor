@@ -38,7 +38,6 @@ def main(res,file_list):
         temp['oss_url'] = url
         temp['commit'] = commit
         result = json.dumps(temp, ensure_ascii=False)
-        #ipdb.set_trace()
     res.append(result)
     output = open('semiconductor.json', 'w')
     for i in res:
